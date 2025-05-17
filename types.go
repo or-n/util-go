@@ -4,21 +4,21 @@ import (
 	"math"
 )
 
-type F32 = float32
-type F64 = float64
+type f32 = float32
+type f64 = float64
 
-type I32 = int32
-type I64 = int64
+type i32 = int32
+type i64 = int64
 
-type U32 = uint32
-type U64 = uint64
+type u32 = uint32
+type u64 = uint64
 
-func Round(x F32) F32 {
-	return F32(math.Round(F64(x)))
+func RoundF32(x f32) f32 {
+	return f32(math.Round(f64(x)))
 }
 
-func BoolI32(x bool) I32 {
-	var result I32
+func BoolI32(x bool) i32 {
+	var result i32
 	if x {
 		result = 1
 	}
